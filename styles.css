@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  margin: 0;
+  padding: 50px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+}
+.nav-list {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  letter-spacing: 2px;
+}
+.nav-list a:hover {
+  border-bottom: #fff 3px solid;
+}
+.nav-icons {
+  width: 20%;
+  display: flex;
+  padding: 1rem;
+}
+.fas {
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.home-page {
+  height: 100vh;
+  background-image: url("https://bktradingintl.com/wp-content/uploads/2020/07/HOME-DECOR-BACKGROUND.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+.heading {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  align-items: center;
+}
+.heading h1 {
+  margin: auto;
+  color: #fff;
+  font-size: 60px;
+}
+.heading h1 span {
+  display: block;
+  margin: 0.4rem auto;
+  text-align: center;
+}
+.lighter {
+  font-weight: lighter;
+  font-size: 50px;
+}
+.shop-now-link {
+  margin: 0.8rem auto;
+  padding: 0.5rem 1.5rem;
+  border: 3px solid #fff;
+  text-decoration: none;
+  color: #fff;
+}
+.shop-now-link:hover {
+  background-color: #fff;
+  color: #343f56;
+  font-weight: bold;
+}
+
+/* category section */
+.category {
+  display: flex;
+  padding: 1rem 0;
+}
+.category .icon {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category .icon img {
+  width: 60px;
+  height: 60px;
+}
+.category .icon span {
+  margin-top: 0.5rem;
+}
+.bedroom,
+.sitting-room,
+.office {
+  border-right: 3px solid #f3f1f1;
+}
+
+/* collection section */
+.collection {
+  padding: 2rem 5rem 2rem;
+  height: 150vh;
+  background-color: #f1f1f1;
+}
+.sub-collection {
+  height: 90%;
+}
+.top,
+.bottom {
+  height: 50%;
+  display: flex;
+}
+.sofa-collection {
+  background-image: linear-gradient(to right, #a7c4bc, #5e8b7e);
+}
+.chair-collection {
+  background-image: linear-gradient(to right, #eeeeee, #c5a880);
+}
+.bed-collection {
+  background-image: linear-gradient(to right, #393e46, #eeeeee);
+}
+.cabinet-collection {
+  background-image: linear-gradient(to right, #ffda77, #eeeeee);
+}
+
+.sofa-collection,
+.chair-collection,
+.bed-collection,
+.cabinet-collection {
+  width: 50%;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 2px 1px -1px rgb(0 0 0 / 12%);
+}
+.collection-image {
+  width: 50%;
+  height: 70%;
+  position: absolute;
+}
+.cabinet-collection .collection-image,
+.bed-collection .collection-image {
+  bottom: 0;
+  right: 0;
+}
+.sofa-collection .collection-image,
+.chair-collection .collection-image {
+  bottom: 0;
+  left: 0;
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.click-link {
+  width: 50%;
+  font-size: 28px;
+  position: absolute;
+}
+.sofa-collection .click-link {
+  right: 5%;
+  top: 20%;
+}
+.chair-collection .click-link {
+  right: 5%;
+  top: 20%;
+}
+.bed-collection .click-link {
+  left: 15%;
+  top: 20%;
+}
+.cabinet-collection .click-link {
+  left: 15%;
+  top: 20%;
+}
+.click-link .lighter {
+  font-size: 28px;
+  display: block;
+}
+
+.click-link a {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.5rem auto;
+  font-weight: bolder;
+  color: white;
+}
+.see-all-link {
+  margin: 1rem auto;
+  text-align: center;
+  width: 15%;
+  height: 2rem;
+  background-color: #343f56;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* featured section */
+.featured {
+  height: 6rem;
+}
+/* advert section */
+.advert {
+  height: 90vh;
+  background-color: #f1f1f1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.advert-image {
+  height: 80%;
+  width: 30%;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+.advert-image img {
+  width: 100%;
+  height: 100%;
+}
+.inner-advert-section {
+  background-image: linear-gradient(to left, #eeeeee, #c5a880);
+  height: 60%;
+  width: 100%;
+  padding: 5rem 8rem;
+}
+.inner-advert-section h3 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+.inner-advert-section p {
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.inner-advert-section button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: #343f56;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.inner-advert-section button:hover {
+  color: #343f56;
+  background-color: white;
+}
+.inner-advert-section span {
+  margin-left: 1rem;
+  text-decoration: line-through;
+}
+.inner-advert-section a {
+  color: #343f56;
+}
+/* blog section */
+.blog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem 5rem;
+  background-color: rgb(250, 245, 245);
+}
+.blog-cards {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.blog-card {
+  width: 48%;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 2px 1px -1px rgb(0 0 0 / 12%);
+}
+.blog-card img {
+  width: 100%;
+  height: 70%;
+}
+.card-description {
+  height: 30%;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem 2rem;
+}
+.blog-heading {
+  margin: 0 auto 1rem;
+}
+/* .blog-heading {
+  padding: 1.7em;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 3em auto;
+  border: solid 2px #d00;
+}
+.blog-heading::before,
+div::after {
+  position: absolute;
+  background: inherit;
+  content: "";
+  z-index: 1;
+}
+.blog-heading::before {
+  width: 100px;
+  left: calc(50% - 50px);
+  height: calc(100% + 4px);
+  top: -2px;
+}
+.blog-heading::after {
+  height: 100px;
+  left: -2px;
+  width: calc(100% + 4px);
+  top: calc(50% - 50px);
+}
+.blog-heading > * {
+  position: relative;
+  z-index: 2; /* ensure any child elements sit above pseudos */
+
+.card-description p {
+  font-weight: lighter;
+  font-size: 12px;
+}
+.card-description h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+}
+.card-description button,
+.blog-button {
+  padding: 0.2rem 1rem;
+  background-color: transparent;
+  border: 3px solid #343f56;
+  cursor: pointer;
+}
+.card-description button:hover,
+.blog-button:hover {
+  background-color: #343f56;
+  color: #fff;
+}
+.blog-button {
+  width: 15%;
+  margin: 1rem auto 2rem;
+}
