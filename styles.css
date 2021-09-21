@@ -218,10 +218,7 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-/* featured section */
-.featured {
-  height: 6rem;
-}
+
 /* advert section */
 .advert {
   height: 90vh;
@@ -287,7 +284,7 @@
 .blog-cards {
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  height: 90%;
 }
 .blog-card {
   width: 48%;
@@ -307,37 +304,10 @@
 }
 .blog-heading {
   margin: 0 auto 1rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
 }
-/* .blog-heading {
-  padding: 1.7em;
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 3em auto;
-  border: solid 2px #d00;
-}
-.blog-heading::before,
-div::after {
-  position: absolute;
-  background: inherit;
-  content: "";
-  z-index: 1;
-}
-.blog-heading::before {
-  width: 100px;
-  left: calc(50% - 50px);
-  height: calc(100% + 4px);
-  top: -2px;
-}
-.blog-heading::after {
-  height: 100px;
-  left: -2px;
-  width: calc(100% + 4px);
-  top: calc(50% - 50px);
-}
-.blog-heading > * {
-  position: relative;
-  z-index: 2; /* ensure any child elements sit above pseudos */
 
 .card-description p {
   font-weight: lighter;
@@ -363,4 +333,173 @@ div::after {
 .blog-button {
   width: 15%;
   margin: 1rem auto 2rem;
+}
+
+/* testimonial section */
+.testimonial {
+  height: 100vh;
+  background-image: url("./images/bg-client-feedback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.testimonial .overlay {
+  background-color: #000;
+  opacity: 0.7;
+  padding: 2rem 2rem 5rem;
+  height: 100%;
+}
+.review-and-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reviews,
+.review-numbers {
+  width: 50%;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.client-heading {
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* border-bottom: 2px solid #fff; */
+}
+.review img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  padding: 2px;
+}
+.review-numbers img {
+  width: 50px;
+  height: 50px;
+}
+.review {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.review .words {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review .image {
+  margin-right: 2rem;
+}
+.review-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-left: 3rem;
+}
+.projects,
+.customers,
+.awards,
+.concepts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .number,
+.customers .number,
+.awards .number,
+.concepts .number {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* email section */
+.email-section {
+  height: 70vh;
+  background-color: #506d84;
+  padding: 3rem 0;
+}
+
+.email-section .inner {
+  /* margin: 3rem 0; */
+  height: 100%;
+  border-top: 2px solid rgb(250, 245, 245);
+  border-bottom: 2px solid rgb(250, 245, 245);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(250, 245, 245);
+}
+.email-section img {
+  height: 80px;
+  width: 80px;
+}
+.email-section button img {
+  height: 20px;
+  width: 20px;
+}
+.email-section h2,
+.email-section p {
+  margin-top: 0.3rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.email-section button {
+  border: none;
+  background: none;
+  text-align: center;
+}
+.email-section form {
+  border-bottom: 1px solid rgb(250, 245, 245);
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+.email-section input {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 3px;
+  color: rgb(250, 245, 245);
+}
+.email-section input::placeholder {
+  color: rgb(250, 245, 245);
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  height: 40vh;
+  padding: 3rem 0.5rem;
+}
+.footer-row {
+  color: rgb(250, 245, 245);
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+footer li {
+  list-style: none;
+  margin-top: 1rem;
+}
+footer li a {
+  text-decoration: none;
+  color: rgb(250, 245, 245);
+  font-size: 18px;
+}
+.logo,
+.social-media,
+.copyright {
+  margin-top: 1rem;
+}
+.social-media a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.social-media a:first-child {
+  margin-left: 0;
 }
